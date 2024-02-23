@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "aplicaciones-analitica",
+  "private_key_id": "f5880d6bc99166ad2a16c102d97c2b49b5d7ec3b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDf+nn3/iut4Y7i\nrTvyeTOYIH8IKqovjBaG75mFiHfwl6Av6zDBr7GBl+bHkKq+SAeFfdJpkoKIcifE\nJKHy2XVuxBBfDas82jDbxaPdDbL1ys0DUYsrgjBmgBcSpBHGY+TYzNjtFxNoAD0V\n/cIWZwUDHY1vuGQUyJqueihQbo1Y+i73a4scuEhTJrNOrA9Q3HnYp16MovC0jsl3\nYforxijOHnVevFEg0u7s3hU0Q+TtfbVcqw7TcI03idHPrLdF+n4t3uW2EXmbRPJT\nrH/TOmqiTTTyxHlT/AZHq9jCrWhS5Z9D+G64CLR2dEdW3RQuKZA1y1asv3TGlHX8\npUx2G1V1AgMBAAECggEACl9UJKrtpOjMMC0rmIgKXqIqn9sx9G+9X1RbPLbcLxUm\ngvGWWXHke4boVheaAKPfTUxNYTw6tUzsEIZNxaxSZuXHiE9evbuxBYx6kTMgNYfF\nxMCS/FnUGfsWlnNoq1JW979M0HYAHRHdwlX1FgqBTeqhcSoN4HSFzUy07zyfaR5e\nsv1iIcAZxG/jNL+HOrzfd4Vg60M2aeRMlHLcOygRvpe1ISYDGnJEJfaGZolxDijI\nfhyIk7vjoLhWuu+bc81GL9QAs5uSGO/7mreMxBPe7wKYbhUuqBDDPrHJKdpP3DHr\nzvyluq+SbKYRi4K4E/HRUv25vONNXTRd2zlGRAvp5QKBgQD/XobdsIeXp0ZCtg0M\nV6RZOWemZ0tgOVSIF629WWdrXYTPDrSU6frJ+7ODuGDXzO0OHtsDlzGg4ifOMDIJ\nkNilAgJ1xSYnSkbiUlIsuCr5tybYWo6hGmeKa0rIzW592dBb0iGVZOW3rHZwDGbo\nxFoSDQJLbp4ZB7/e8LDekAFMCwKBgQDgiBnOpRs4xAebpSCS720U3UI2cm0ZywvS\n0DBXpLY38Yg2ekb51bomcOYLyP7WKkdiFX3UYsELJ2pTpbFN2i9CxJoCfRWwk3Pv\n5L7UBdW+yHALuxRLrZv2+OL44HSrrKOPc3zfSRLeETmg1jS/z+HGIBfZVy28iR9n\nFiZoOGlUfwKBgQCdo7SNVVPeghwVQlx7qf6CNbWOO2WEWN+dw0A1CuOUm35Ic0N2\nSZnO5dnDDiZ6EL6lYNbCOKsiLXl1BrtcvFWARuVN3g3XYzquqzKe+HFPBYitNfml\n6a7Q+7qGiooSlkrQ475ngolsAMJ8GKvONKeFTRKFjht6SBZhgSMtwKeMUQKBgQCV\nd6SOXnS3ni9eWldL2RypVf0c16FvGS6ewL5dqaUvqpa9hTq4V6Gas29AiyWxleV9\nEsd32eGeNjfexR85rzPk45GOdIw6xn3YRVMPO28lmLKV7Iy/MCvyBY66lFi2a69Z\n8ExBK5jmwVq2icIFqjImvPiDUzh8GGASNLmOiXb8qwKBgEIOyg//tus35F0JeK76\na0jF1gRYZ+aIeGhxMgVnf9+uzERH6rcPwXzBAOHhZqxf0Gqlr6ey4zpKv/HoGPF4\nEcjZWhsUKcm2tuVCrbjnOP/VradSD1Gsd7Ay+0Om0ezYH6Eo5kFIrrFI1YY/IC8X\nd1vI9+a5dQnCrm2rmusJf9mu\n-----END PRIVATE KEY-----\n",
+  "client_email": "proyecto-recursos-humanos@aplicaciones-analitica.iam.gserviceaccount.com",
+  "client_id": "116353661295132084600",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/proyecto-recursos-humanos%40aplicaciones-analitica.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
