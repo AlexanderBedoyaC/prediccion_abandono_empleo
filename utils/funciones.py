@@ -18,28 +18,28 @@ from google.oauth2 import service_account
 
 #Diccionario de datos con nombre y descripción de variables
 DATA_DICT = {
-    'Age': 'Edad del empleado',
-    'Attrition': 'Si el empleado se abandono su empleo o no el año anterior',
-    'BusinessTravel': 'Frecuencia con la que los empleados viajaron por motivos de trabajo en el último año',
+    'Age': 'Edad del colaborador',
+    'Attrition': 'Si el colaborador se retiró de su empleo o no el año anterior',
+    'BusinessTravel': 'Frecuencia con la que los colaboradors viajaron por motivos de trabajo en el último año',
     'Department': 'Departamento en la empresa',
     'DistanceFromHome': 'Distancia del domicilio en kms',
     'Education': 'Nivel de estudios',
     'EducationField': 'Ámbito de formación',
-    'EmployeeCount': 'Número de empleados',
-    'EmployeeID': 'Id de empleado',
-    'Gender': 'Sexo del empleado',
+    'EmployeeCount': 'Número de colaboradors',
+    'EmployeeID': 'Id de colaborador',
+    'Gender': 'Sexo del colaborador',
     'JobLevel': 'Nivel del puesto en la empresa en una escala de 1 a 5',
     'JobRole': 'Nombre del puesto de trabajo en la empresa',
-    'MaritalStatus': 'Estado civil del empleado',
+    'MaritalStatus': 'Estado civil del colaborador',
     'MonthlyIncome': 'Ingresos mensuales en dólares al mes',
-    'NumCompaniesWorked': 'Número total de empresas en las que ha trabajado el empleado',
-    'Over18': 'Si el empleado es mayor de 18 años o no',
+    'NumCompaniesWorked': 'Número total de empresas en las que ha trabajado el colaborador',
+    'Over18': 'Si el colaborador es mayor de 18 años o no',
     'PercentSalaryHike': 'Porcentaje de aumento salarial en el último año',
-    'StandardHours': 'Horas estándar de trabajo del empleado',
-    'StockOptionLevel': 'Nivel de opciones sobre acciones del empleado',
-    'TotalWorkingYears': 'Número total de años que el empleado ha trabajado hasta ahora',
-    'TrainingTimesLastYear': 'Número de veces que se impartió formación a este empleado el año pasado',
-    'YearsAtCompany': 'Número total de años que el empleado lleva en la empresa',
+    'StandardHours': 'Horas estándar de trabajo del colaborador',
+    'StockOptionLevel': 'Nivel de opciones sobre acciones del colaborador',
+    'TotalWorkingYears': 'Número total de años que el colaborador ha trabajado hasta ahora',
+    'TrainingTimesLastYear': 'Número de veces que se impartió formación a este colaborador el año pasado',
+    'YearsAtCompany': 'Número total de años que el colaborador lleva en la empresa',
     'YearsSinceLastPromotion': 'Número de años desde el último ascenso',
     'YearsWithCurrManager': 'Número de años bajo el mando del jefe actual',
     'EnvironmentSatisfaction': 'Nivel de satisfacción del entorno de trabajo',
@@ -47,7 +47,7 @@ DATA_DICT = {
     'WorkLifeBalance': 'Nivel de conciliación de la vida laboral y familiar',
     'JobInvolvement': 'Nivel de implicación en el trabajo',
     'PerformanceRating': 'Valoración del rendimiento en el último año',
-    'MeanTime': 'Tiempo promedio de trabajo al día del empleado en el último año',
+    'MeanTime': 'Tiempo promedio de trabajo al día del colaborador en el último año',
     'retirementType': 'Tipo de retiro',
     'resignationReason': 'Razón de la renuncia',
     'retirementDate': 'Fecha de retiro'
@@ -114,7 +114,7 @@ def univariado_torta(df, col, hole=0):
                                 )])
     fig.update_layout(
         title_text = DATA_DICT[col],
-        height = 400 )
+        height = 400, width=600)
     fig.show()
     
     return tabla
