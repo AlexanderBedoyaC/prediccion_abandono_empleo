@@ -20,7 +20,7 @@ from google.oauth2 import service_account
 #Diccionario de datos con nombre y descripción de variables
 DATA_DICT = {
     'Age': 'Edad del colaborador',
-    'Attrition': 'Si el colaborador se retiró de su empleo o no el año anterior',
+    'Attrition': 'Si el colaborador se renunció a su empleo o no el año anterior',
     'BusinessTravel': 'Frecuencia con la que los colaboradors viajaron por motivos de trabajo en el último año',
     'Department': 'Departamento en la empresa',
     'DistanceFromHome': 'Distancia del domicilio en kms',
