@@ -5,6 +5,7 @@ import numpy as np
 # Librerías para visualización
 import plotly.express as px
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 # Librerías para machine learning
 from sklearn.model_selection import train_test_split
@@ -75,6 +76,26 @@ def tabla_frecuencias(df, col):
     
     return tabla.sort_values(by='Frecuencia Absoluta', ascending=False)
 
+# visualizar outliers
+def vizualizar_outliers(data, col):
+    
+    fig = make_subplots(rows = 1, cols = 2,
+                    subplot_titles = ('Boxplot', 'Histograma'),
+                    column_widths = [0.7, 0.3])
+
+    fig.add_trace(
+        go.Box(x = data[col]),
+        row = 1, col = 1
+    )
+
+    fig.add_trace(
+        go.Histogram(x = data[col]),
+        row = 1, col = 2
+    )
+
+    fig.update_layout(title_text = DATA_DICT[col], height=400, width=1000, showlegend = False)
+    fig.show()
+
 # Genera tabla de frecuencias y gráfico de barras para una variable
 def univariado_barras(df, col, orientation='v'):
     
@@ -138,3 +159,15 @@ def analisisBivariado(df, variables, orient, mode, color=px.colors.qualitative.P
     print("Tabla de contingencia:")
     
     return contingency_table
+
+# Imputar outliers con IQR
+def imputar_outliers(data, cols, th):
+
+    for col in cols:
+
+        q1, q2 = data[col].quantile(0.25), data[col].quantile(0.75)
+        iqr = q2 - q1
+        lim_inf, lim_sup = q1 - th * iqr, q2 + th * iqr
+        data = data[(data[col] >= lim_inf) & (data[col] <= lim_sup)]
+        
+    return data
