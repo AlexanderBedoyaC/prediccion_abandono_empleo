@@ -51,7 +51,8 @@ DATA_DICT = {
     'MeanTime': 'Tiempo promedio de trabajo al día del colaborador en el último año',
     'retirementType': 'Tipo de retiro',
     'resignationReason': 'Razón de la renuncia',
-    'retirementDate': 'Fecha de retiro'
+    'retirementDate': 'Fecha de retiro',
+    'mes_renuncia' : 'Mes de renuncia'
 }
 
 # Se conecta a bigquery y trae la tabla que se le pase
@@ -171,3 +172,13 @@ def imputar_outliers(data, cols, th):
         data = data[(data[col] >= lim_inf) & (data[col] <= lim_sup)]
         
     return data
+
+# Boxplot y describe 
+def bivariado_num(data,variables):
+    fig=px.box(data, x=variables[0], y=variables[1],color= variables[0], title=DATA_DICT[variables[1]])
+    fig.update_layout(showlegend=False)
+    fig.show()
+    print('',DATA_DICT[variables[1]], 'de los que no se retiraron: ')
+    print(data[data[variables[0]]=='No'][variables[1]].describe())
+    print('\n',DATA_DICT[variables[1]],'de los que si se retiraron: ')
+    print(data[data[variables[0]]=='Sí'][variables[1]].describe())
