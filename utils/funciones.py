@@ -191,10 +191,8 @@ def regresionLogistica (df,y):
     
     X_train, X_test,y_train,y_test = train_test_split(df,y,test_size=0.2, random_state=42)
 
-    num = df.select_dtypes(include=[float,int]).columns
-    pipeline = ColumnTransformer([('num',StandardScaler(),num)],remainder='passthrough')
-    X_train_std = pipeline.fit_transform(X_train)
-    X_test_std = pipeline.transform(X_test)
+    X_train_std = X_train
+    X_test_std = X_test
 
     lr = LogisticRegression(max_iter=1000,class_weight="balanced", random_state=42).fit(X_train_std,y_train)
     y_pred_train = lr.predict(X_train_std)
