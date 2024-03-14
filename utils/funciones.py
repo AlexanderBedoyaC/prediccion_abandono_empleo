@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 # Librerías para machine learning
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
@@ -341,3 +341,14 @@ def metricas(model, X, y, t):
     print('Train score: ',model.score(X,y))
     
     return precision, recall, especificidad, f1_score
+
+def medir_modelos(modelos,scoring,X,y,cv):
+
+    metric_modelos=pd.DataFrame()
+    for modelo in modelos:
+        scores=cross_val_score(modelo,X,y, scoring=scoring, cv=cv )
+        pdscores=pd.DataFrame(scores)
+        metric_modelos=pd.concat([metric_modelos,pdscores],axis=1)
+    
+    metric_modelos.columns=["reg_lineal","decision_tree","random_forest","gradient_boosting"]
+    return metric_modelos
