@@ -416,3 +416,24 @@ def medir_modelos(modelos,scoring,X,y,cv):
     
     metric_modelos.columns=["reg_lineal","decision_tree","random_forest","gradient_boosting"]
     return metric_modelos
+
+def curvaROC(model,X,y):
+    from sklearn.metrics import roc_curve, auc
+    import matplotlib.pyplot as plt
+
+    y_pred=model.predict_proba(X)
+    # Calcular la curva ROC
+    fpr, tpr, _ = roc_curve(y, y_pred[:,1])
+    roc_auc = auc(fpr, tpr)
+
+    plt.figure(figsize=(6, 4))
+    plt.plot(fpr, tpr, color='red', lw=2, label='Curva ROC (AUC = %0.2f)' % roc_auc)
+    plt.plot([0, 1], [0, 1], color='darkgray', lw=2, linestyle='--', label='RANDOM CLASSIFIER')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('FALSE POSITIVE RATE')
+    plt.ylabel('TRUE POSITIVE RATE')
+    plt.title('ROC CURVE')
+    plt.legend(loc="lower right")
+    plt.show()
+    return roc_auc
