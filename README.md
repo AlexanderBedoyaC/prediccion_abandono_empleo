@@ -1,4 +1,4 @@
-# Proyecto de aplicación de la Analítica en Recursos Humanos
+# Proyecto de aplicación de Analítica en Recursos Humanos
 
 ## Integrantes
 
