@@ -1,4 +1,16 @@
-# Descripción de la situación
+# Proyecto de aplicación de la Analítica en Recursos Humanos
+
+## Integrantes
+
+Ana María Ospina Arredondo
+
+Brahayan Stiven Gil Henao
+
+Jhon Alexander Bedoya Carvajal
+
+Sebastián Salamanca Mendez
+
+## Descripción de la situación
 
 Una empresa que tiene alrededor de 4000 empleados tiene una tasa de retiros de alrededor del 15% anual. Esto quiere decir que el 15% de los empleados en un año se retiran de la compañía por diferentes motivos. Los directivos de la empresa consideran que este nivel de retiros es muy alto, ya que trae altos costos para la empresa como: el costo de contratación que incluye todos los procesos desde el reclutamiento, la selección, la contratación y adicionalmente existe un costo relacionado con la capacitación, la curva de aprendizaje y las contrataciones no efectivas que son personas que se retiran de la empresa en el periodo de prueba. Adicionalmente, el retiro de las personas conlleva otras implicaciones negativas para la empresa que se presentan a continuación:
 
