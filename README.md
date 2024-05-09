@@ -25,8 +25,12 @@ Con base en la información anterior, se solicita al equipo de analítica propon
 
 ## Las bases de datos entregadas son las siguiente:
 
-data.dictionay.xlsx:  Descripción de los campos encontrados en las bases de datos.
-employee_survey_data.csv:  Encuesta realizada a los empleados sobre satisfacción laboral a final de cada año, se tienen el histórico de dos encuestas, la realizada el 31-12-2015 y la que se realizó el 31-12-2016.
-general_data.csv: Información general de los empleados, dado que la información puede cambiar con el tiempo se extrajo la información con el último corte 31-12-2016 y un histórico con la información con corte 31-12-2015
-manager_survey_data.csv: Encuesta de desempeño de los empleados realizada por parte de los jefes, se tienen el histórico de dos encuestas, la realizada el 31-12-2015 y la que se realizó el 31-12-2016.
-retirement_info.csv: Información de retiro de los empleados que dejaron la empresa, se tiene la información de retiro de los empleados de 2015 y 2016, sin embargo, la información de 2015 no se pudo obtener completa por problemas en el almacenamiento de la información, por lo tanto, no están todos los empleados que se retiraron ese año.
+- data.dictionay.xlsx:  Descripción de los campos encontrados en las bases de datos.
+
+- employee_survey_data.csv:  Encuesta realizada a los empleados sobre satisfacción laboral a final de cada año, se tienen el histórico de dos encuestas, la realizada el 31-12-2015 y la que se realizó el 31-12-2016.
+
+- general_data.csv: Información general de los empleados, dado que la información puede cambiar con el tiempo se extrajo la información con el último corte 31-12-2016 y un histórico con la información con corte 31-12-2015.
+
+- manager_survey_data.csv: Encuesta de desempeño de los empleados realizada por parte de los jefes, se tienen el histórico de dos encuestas, la realizada el 31-12-2015 y la que se realizó el 31-12-2016.
+
+- retirement_info.csv: Información de retiro de los empleados que dejaron la empresa, se tiene la información de retiro de los empleados de 2015 y 2016, sin embargo, la información de 2015 no se pudo obtener completa por problemas en el almacenamiento de la información, por lo tanto, no están todos los empleados que se retiraron ese año.
